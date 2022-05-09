@@ -5,6 +5,22 @@ async function criarPedido(pedido){
     return criar
 }
 
+async function atualizarPedidos(pedido){
+    repositoryPedidos.atualizarPedidos(pedido)
+}
+
+async function atualizarStatus(pedido){
+    repositoryPedidos.atualizarStatus(pedido)
+}
+
+async function deletarPedido(id){
+    repositoryPedidos.deletarPedido(id)
+}
+
+
 export default {
-    criarPedido
+    criarPedido,
+    atualizarPedidos,
+    atualizarStatus,
+    deletarPedido
 }
